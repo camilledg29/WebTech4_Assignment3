@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tech 4 - Assignment 3 - Cart</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div id="navbar-topline">
+                <div class="break">
+                    <button id="menu-toggle" class="nav-button"><i class="fas fa-bars"></i></button>
+                </div>
+
+                <a href="index.html" class="navbar-brand"><img src="images/1200px-Aerie_logo.svg.png"></a>   
+                    <div class="navbar-icons">
+                        <a href="#"><i class="fa fa-search"></i></a>
+                        <a href="#"><i class="fa fa-user"></i></a>
+                        <a href="#"><i class="fa fa-heart"></i></a>
+                        <a href="cart.html"><i class="fa fa-shopping-bag"></i></a>
+                        <span id="cart-count">0</span> <!-- Cart count will be updated here -->
+                    </div>
+            </div>
+
+            <ul id="menu">
+                <div class="navbar-links">
+                    <a href="#">Today's Offers</a>
+                    <a href="new.html">New</a>
+                    <a href="#">Clothing + Accessories</a>
+                    <a href="#">Bras</a>
+                    <a href="#">Undies</a>
+                    <a href="#">Activewear</a>
+                    <a href="#">Swimsuits</a>
+                    <a href="#">Clearance</a>
+                </div>
+            </ul>
+        </div>
+      </nav>
+
+    <div class="cart-container">
+        <div class="cart-container-header">
+        <h1>Checkout</h1>
+        </div> 
+    </div>
+
+    <div class="checkout-grid">
+
+        <div class="checkout-info">
+            <h2>Address</h2>
+            <form>
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname">
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="address">
+                <label for="apt">Apt #, Floor, etc.</label>
+                <input type="text" id="apt" name="apt">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+                <label for="prov">Province / Territory</label>
+                <input type="text" id="prov" name="prov">
+                <label for="postal">Postal Code</label>
+                <input type="text" id="postal" name="postal">
+            </form>
+            <h2>Shipping</h2>
+            <div class="shipping">
+                <form>
+                    <input type="radio" id="standard" name="shipping" value="standard">
+                    <label for="standard">Standard</label><br>
+                    <input type="radio" id="express" name="shipping" value="express">
+                    <label for="express">Express</label><br>
+                </form>
+            </div>
+            <h2>Payment</h2>
+            <div class="payment">
+                <form>
+                    <input type="radio" id="visa" name="payment" value="visa">
+                    <label for="visa">Visa</label><br>
+                    <input type="radio" id="mastercard" name="payment" value="mastercard">
+                    <label for="mastercard">Mastercard</label><br>
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">Paypal</label><br>
+                </form>
+            </div>
+            <div class="payment-info">
+                <form>
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname">
+                    <label for="postal">Postal Code</label>
+                    <input type="text" id="postal" name="postal">
+                    <label for="expdate">Exp Date</label>
+                    <input type="text" id="expdate" name="expdate">
+                    <label for="card">Card Number</label>
+                    <input type="text" id="card" name="card">
+                    <label for="ccv">CCV</label>
+                    <input type="text" id="ccv" name="ccv">
+                </form>
+            </div>
+        </div>
+
+        <div class="items-container">
+        <h2>Items</h2>
+            <div class="cart-items-container">
+                <!-- Items will be added dynamically by the script -->
+            </div>
+        </div>
+
+        <div class="order-summary">
+            <h2>Summary</h2>
+            <p>Merchandise: $CAD</p>
+            <P>Estimated Shipping: Free</P>
+            <p>Duties: Free</p>
+            <p>Taxes: $CAD</p>
+            <h5>Subtotal: $CAD</h5>
+        </div>
+</div>
+    <button type="button">Place Order</button>
+
+<footer>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-first">
+                <p>Store Locator</p>
+                <p>Track Order</p>
+                <p>Gift Cards</p>
+            </div>
+            <div class="footer-middle">
+                <h5>Follow us!</h5>
+                    <div class="footer-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+    
+               <div class="footer-terms">
+                    <p>Terms of Use</p>
+                    <p>Privacy Rights</p>
+                    <p>Privacy Notices</p>
+                    <p>Cookie Settings</p>
+                    <p>Brand Protection</p>
+                </div>
+                   <img src="images/1200px-Aerie_logo.svg.png">
+                </div>  
+            <div class="footer-last">
+                    <h5>Currency</h5>
+                    <div class="currency">
+                        <a href="#"><i class="fa fa-globe"></i></a>
+                        <p>$CAD</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+<script src="./js/cart.js"></script>
+</html>

@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+html {
+  font-family: "Laila", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 6rem;
+}
+
+h1 {
+  color: #00495F; 
+  font-size: 4.5rem;
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3, h4 {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h5 {
+  font-family: "Laila", serif;
+  font-weight: 500;
+  font-style: medium;
+
+}
+
+/* ----------------- Nav Bar -----------------*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFF;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); 
+    font-family: "Laila", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    border-bottom: 0.5px solid black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+.navbar img {
+    width: 100px;
+}
+
+#navbar-topline {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18rem;
+}
+
+  
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+  
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000; 
+  padding-bottom: 0.8rem;
+}
+  
+.navbar-links a, .navbar-icons a {
+  text-decoration: none;
+  color: #000; 
+  margin-left: 20px; 
+  font-size: 1em;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+  
+.navbar-icons {
+  display: flex;
+  margin-left: auto;
+}
+  
+.fa {
+  margin: 0 10px;
+}
+
+.nav-button {
+  display: none;
+}
+
+/* ----------------- Hero Section -----------------*/
+
+.hero-headers {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.hero-headers h1{
+    font-size: 5rem;
+    margin-bottom: 0px;
+}
+
+.hero-headers h2 {
+    color: #427585;
+    text-align: right;
+    margin-bottom: 0px;
+    text-align: right;
+}
+
+.hero-image img{
+    height: 100vh;
+}
+
+.hero-bottom {
+  text-align: right;
+  color: #427585;
+  padding-right: 2.5rem;
+}
+
+.hero-bottom h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.hero-bottom h4 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* ----------------- Shop Section -----------------*/
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 2rem;
+  gap: 0.5rem;
+}
+
+.grid img {
+  width: 100%;
+}
+
+.grid h5 {
+  margin: 0;
+}
+
+.shop h1{
+  font-size: 5rem;
+  padding-left: 1rem;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.grid a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ----------------- Bottom Section -----------------*/
+
+.lower {
+  padding-bottom: 6rem;
+}
+
+.lower-image img{
+  width: 100vw;
+}
+
+.lower h1{
+  padding-left: 1rem;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.lower-bottom {
+  text-align: right;
+  color: #427585;
+  padding-right: 2.5rem;
+}
+
+.lower-bottom h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* ----------------- Footer Section -----------------*/
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+  border-top: 0.5px solid #000;
+  padding: 2rem 1rem;
+}
+
+.footer-terms {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.footer img {
+  width: 50px;
+}
+
+.footer-icons a i {
+  text-decoration: none;
+  color: #000;
+}
+
+.currency {
+  display: flex;
+  flex: row;
+  align-items: center;
+}
+
+.currency a i {
+  color: black;
+  text-decoration: none;
+}
+
+/* ----------------- New Section -----------------*/
+
+.new-container-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: baseline;
+  margin: 1.25rem; 
+  padding-top: 2rem;
+}
+
+.new-container-header h1,
+.new-container-header h5 {
+  margin: 0;
+}
+
+#products-container {
+  max-width: 100%; 
+  margin: 0 auto; 
+  overflow-x: auto; 
+  text-align: center; 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px; 
+  padding-bottom: 3rem;
+}
+
+.product-cards {
+  padding: 0.5rem;
+  border: 0.03rem solid black;
+  border-radius: .375rem;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-cards img {
+  max-width: 100%; 
+  object-fit: contain;
+  display: block; 
+  height: auto;
+}
+
+.product-cards h5 {
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ----------------- Cart Section -----------------*/
+
+
+.cart-container h1{
+  padding-left: 1rem;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-areas: 'info items' 'info order';
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 0 1rem;
+  margin-bottom: 5rem;
+}
+
+.checkout-grid p {
+  text-align: left;
+}
+
+.checkout-grid h5 {
+  text-align: left;
+}
+
+.checkout-info {
+  grid-area: info;
+  background-color: #fdd9d562;
+  border-radius: .375rem;
+}
+
+.checkout-info form {
+  display: grid;
+  gap: auto;
+}
+
+.items-container {
+  grid-area: items;
+  background-color: #fdd9d562;
+  border-radius: .375rem;
+}
+
+.order-summary {
+  grid-area: order;
+  background-color: #fdd9d562;
+  border-radius: .375rem;
+}
+
+.checkout-grid h2{
+  padding-left: 1rem;
+  margin-bottom: 0px;
+  text-align: left;
+  color:#427585;
+}
+
+.shipping {
+  display: flex;
+}
+
+.shipping form {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding-left: 3rem;
+}
+
+.payment form {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding-left: 3rem;
+}
+
+input[type=text] {
+  border-radius: 4px;
+}
+
+.checkout-info label {
+  text-align: left;
+}
+
+input {
+  background-color: white;
+  padding: 10px 44px;
+  font-size: 16px;
+  border-radius: 6px;
+  border-color: #F99F53;
+}
+
+form {
+  width: 75%;
+  padding-left: 3rem;
+}
+
+button {
+  background-color: #FDD9D5;
+  font-size: 1rem;
+  font-family: "Laila", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  border: none;
+  padding: .125rem 3.5rem;
+  border-radius: .375rem;
+  margin-left: 75%;
+  margin-bottom: 3rem;
+}
+
+/* ----------------- Mobile Section -----------------*/
+
+
+@media screen and (max-width: 30em) {
+
+  h1 {
+    font-size: 2.6125rem;
+  }
+  
+  h2 {
+    font-size: 2.1775rem;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  h3 {
+    font-size: 1.8144rem;
+  }
+
+  h4 {
+    font-size: 1.5119rem;
+  }
+  
+  h5 {
+    font-size: 1.26rem;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: baseline; /* Align items to the start on mobile */
+    max-width: 480px;
+    justify-content: flex-start;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  #navbar-topline {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .navbar-brand img {
+    width: 80px; /* Scale down logo size on mobile */
+    padding: 0;
+  }
+
+  .navbar-links, .navbar-icons {
+    display: none; /* Hide these elements by default on mobile */
+  }
+
+
+  #menu-toggle {
+      display: block;
+      color: black;
+      padding: .75rem;
+      background-color: #FDD9D5;
+  }
+
+  #menu {
+      background-color: white;
+      display: none;
+      flex-direction: column;
+      padding: 10px;
+      position: absolute;
+      top: 50px;
+      right: 20px;
+  }
+
+  nav {
+      height: auto;
+  }
+
+  #menu.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .nav-button{
+    margin: 0;
+    
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #FDD9D5;
+  }
+
+  .hero-headers {
+    flex-direction: column;
+    align-items: center; /* Center the text on mobile */
+    padding-top: 3rem;
+    gap: 0;
+  }
+
+  .hero-headers h1 {
+    font-size: 2.6125rem;
+    text-align: left;
+  }
+
+  .hero-headers h2 {
+    text-align: left;
+  }
+
+  .hero-image img {
+    width: 100%; /* Make the image take the full width */
+    height: auto; /* Adjust height automatically */
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 7 on mobile */
+    gap: 1rem; /* Smaller gap on mobile */
+  }
+
+  .footer-container {
+    flex-direction: column; /* Stack elements on top of each other */
+  }
+
+  .footer-first, .footer-middle, .footer-last {
+    text-align: center;
+    margin-bottom: 1rem; /* Add some margin between footer items */
+  }
+
+  .new-container-header {
+    padding-top: 3rem;
+  }
+
+  #products-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    gap: 0.5rem;
+  }
+
+  .checkout-grid {
+    grid-template-areas:
+      'info'
+      'items'
+      'order';
+    grid-template-columns: 1fr;
+    gap: 1rem; /* Adjust gap as needed */
+  }
+  
+  .checkout-info, .items-container, .order-summary {
+    /* This ensures that each section takes full width */
+    width: 100%;
+  }
+  
+  form {
+    width: auto; /* Adjust form width to fit smaller screens */
+    padding: 1rem; /* Adjust padding as needed */
+  }
+  
+  button {
+    margin-left: auto;
+    margin-right: auto; /* Center button on smaller screens */
+    display: block; /* Ensure button is block-level to fill width */
+  }
+
+  .shipping form {
+    gap: 1rem;
+  }
+
+  .payment form {
+    gap: 1rem;
+  }
+}
